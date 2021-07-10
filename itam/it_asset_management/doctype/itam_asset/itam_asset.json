@@ -10,7 +10,13 @@
   "serial_no",
   "manufacturer",
   "supplier",
-  "naming_series"
+  "naming_series",
+  "notes",
+  "asset_owner",
+  "model_no",
+  "model",
+  "check_out",
+  "asset_image"
  ],
  "fields": [
   {
@@ -42,11 +48,45 @@
    "fieldtype": "Select",
    "label": "Naming Series",
    "options": "########"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "asset_owner",
+   "fieldtype": "Link",
+   "label": "Asset Owner",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "model_no",
+   "fieldtype": "Data",
+   "label": "Model No."
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Model",
+   "options": "Item"
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Link",
+   "label": "Checked Out To",
+   "options": "Contact",
+   "read_only": 1
+  },
+  {
+   "fieldname": "asset_image",
+   "fieldtype": "Image",
+   "label": "Asset Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 07:29:30.842654",
+ "modified": "2021-07-10 07:38:26.272345",
  "modified_by": "Administrator",
  "module": "IT Asset Management",
  "name": "ITAM Asset",
