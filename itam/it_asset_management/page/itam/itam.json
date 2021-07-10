@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2021-07-10 07:55:44.087303",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-07-10 07:58:55.396127",
+ "modified_by": "Administrator",
+ "module": "IT Asset Management",
+ "name": "itam",
+ "owner": "Administrator",
+ "page_name": "ITAM",
+ "roles": [
+  {
+   "role": "All"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "IT Asset Management"
+}
