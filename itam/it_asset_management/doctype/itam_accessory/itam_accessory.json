@@ -1,49 +1,49 @@
 {
  "actions": [],
- "creation": "2021-07-10 07:23:55.028623",
+ "autoname": "naming_series",
+ "creation": "2021-07-10 08:57:45.415916",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name1",
-  "type",
-  "eula",
-  "default_eula"
+  "accessory_name",
+  "naming_series",
+  "company",
+  "barcode"
  ],
  "fields": [
   {
-   "fieldname": "name1",
+   "fieldname": "accessory_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1
+   "label": "Accessory Name"
   },
   {
-   "fieldname": "type",
+   "fieldname": "naming_series",
    "fieldtype": "Select",
-   "label": "Type",
-   "options": "Asset\nAccessory\nConsumable\nComponent\nLicence"
+   "label": "Naming Series",
+   "options": "ACC-########"
   },
   {
-   "depends_on": "eval:doc.default_eula == 0",
-   "fieldname": "eula",
+   "fieldname": "company",
    "fieldtype": "Link",
-   "label": "EULA",
-   "options": "EULA"
+   "label": "Company",
+   "options": "Customer"
   },
   {
-   "default": "0",
-   "fieldname": "default_eula",
-   "fieldtype": "Check",
-   "label": "Default EULA"
+   "fetch_from": "doc.name",
+   "fetch_if_empty": 1,
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 08:39:38.142743",
+ "modified": "2021-07-10 15:52:37.216837",
  "modified_by": "Administrator",
  "module": "IT Asset Management",
- "name": "ITAM Asset Category",
+ "name": "ITAM Accessory",
  "owner": "Administrator",
  "permissions": [
   {

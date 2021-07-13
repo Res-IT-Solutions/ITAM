@@ -16,7 +16,10 @@
   "model_no",
   "model",
   "check_out",
-  "asset_image"
+  "asset_image",
+  "barcode",
+  "default_location",
+  "status"
  ],
  "fields": [
   {
@@ -47,7 +50,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "########"
+   "options": "AST-########"
   },
   {
    "fieldname": "notes",
@@ -82,11 +85,30 @@
    "fieldname": "asset_image",
    "fieldtype": "Image",
    "label": "Asset Image"
+  },
+  {
+   "fetch_from": "doc.name",
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_location",
+   "fieldtype": "Link",
+   "label": "Default Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nAvailable\nArchived\nBroken - Not Repairable\nIn Use - General\nIn Use - Issued\nLost / Stolen\nUnavailable (Diagnostics)\nUnavailable (Repair)"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-07-10 07:38:26.272345",
+ "modified": "2021-07-10 15:59:36.928757",
  "modified_by": "Administrator",
  "module": "IT Asset Management",
  "name": "ITAM Asset",

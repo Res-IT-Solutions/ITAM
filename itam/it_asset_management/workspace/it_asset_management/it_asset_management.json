@@ -9,6 +9,7 @@
  "doctype": "Workspace",
  "extends_another_page": 0,
  "hide_custom": 0,
+ "icon": "sell",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
@@ -16,20 +17,12 @@
  "links": [
   {
    "hidden": 0,
+   "icon": "fa fa-desktop",
    "is_query_report": 0,
-   "label": "Settings",
+   "label": "Asset Management",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Asset Categories",
-   "link_to": "ITAM Asset Category",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
   },
   {
    "hidden": 0,
@@ -39,9 +32,63 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Accessories",
+   "link_to": "ITAM Accessory",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Licences",
+   "link_to": "ITAM Licence",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "EULA",
+   "link_to": "EULA",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "icon": "fa fa-gear",
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_to": "ITAM Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Asset Categories",
+   "link_to": "ITAM Asset Category",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2021-07-10 08:08:03.839679",
+ "modified": "2021-07-11 07:35:00.631296",
  "modified_by": "Administrator",
  "module": "IT Asset Management",
  "name": "IT Asset Management",
@@ -53,6 +100,18 @@
    "doc_view": "List",
    "label": "Assets",
    "link_to": "ITAM Asset",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Accessories",
+   "link_to": "ITAM Accessory",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Licences",
+   "link_to": "ITAM Licence",
    "type": "DocType"
   }
  ]

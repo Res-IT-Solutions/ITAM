@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "creation": "2021-07-10 08:42:20.711027",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "default_eula",
+  "general_service_item",
+  "data_backup_item",
+  "service_cost",
+  "data_backup_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "default_eula",
+   "fieldtype": "Link",
+   "label": "Default EULA",
+   "options": "EULA"
+  },
+  {
+   "fieldname": "general_service_item",
+   "fieldtype": "Link",
+   "label": "General Service Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "data_backup_item",
+   "fieldtype": "Link",
+   "label": "Data Backup Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "service_cost",
+   "fieldtype": "Currency",
+   "label": "Service Cost"
+  },
+  {
+   "fieldname": "data_backup_cost",
+   "fieldtype": "Currency",
+   "label": "Data Backup Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-07-10 16:14:12.700758",
+ "modified_by": "Administrator",
+ "module": "IT Asset Management",
+ "name": "ITAM Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

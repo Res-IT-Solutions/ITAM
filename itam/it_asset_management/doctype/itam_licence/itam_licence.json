@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "autoname": "field:product_key",
+ "creation": "2021-07-10 09:17:49.979641",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "software_name",
+  "category",
+  "product_key",
+  "seats",
+  "licence_owner",
+  "manufacturer",
+  "licenced_to_user",
+  "licenced_to_email",
+  "purchase_date",
+  "expiration_date",
+  "termination_date",
+  "notes",
+  "seats_issued",
+  "seats_available"
+ ],
+ "fields": [
+  {
+   "fieldname": "software_name",
+   "fieldtype": "Data",
+   "label": "Software Name"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "ITAM Asset Category"
+  },
+  {
+   "fieldname": "product_key",
+   "fieldtype": "Data",
+   "label": "Product Key",
+   "unique": 1
+  },
+  {
+   "fieldname": "seats",
+   "fieldtype": "Int",
+   "label": "Seats"
+  },
+  {
+   "fieldname": "licence_owner",
+   "fieldtype": "Link",
+   "label": "Licence Owner",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "manufacturer",
+   "fieldtype": "Link",
+   "label": "Manufacturer",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "licenced_to_user",
+   "fieldtype": "Link",
+   "label": "Licenced To User",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "licenced_to_email",
+   "fieldtype": "Data",
+   "label": "Licenced to Email"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "Expiration date"
+  },
+  {
+   "fieldname": "termination_date",
+   "fieldtype": "Date",
+   "label": "Termination date"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "seats_issued",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Seats Issued",
+   "read_only": 1
+  },
+  {
+   "fieldname": "seats_available",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Seats Available",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-10 09:21:57.476163",
+ "modified_by": "Administrator",
+ "module": "IT Asset Management",
+ "name": "ITAM Licence",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

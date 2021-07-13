@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2021-07-10 16:04:16.684021",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "asset",
+  "naming_series",
+  "notes",
+  "start_date",
+  "end_date",
+  "amended_from",
+  "maintenance_type",
+  "maintenance_engineer"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset",
+   "fieldtype": "Link",
+   "label": "Asset",
+   "options": "ITAM Asset"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "MANT-.######"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ITAM Maintenance",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "maintenance_type",
+   "fieldtype": "Link",
+   "label": "Maintenance Type",
+   "options": "ITAM Maintenance Type"
+  },
+  {
+   "fieldname": "maintenance_engineer",
+   "fieldtype": "Link",
+   "label": "Maintenance Engineer",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2021-07-10 16:15:28.709228",
+ "modified_by": "Administrator",
+ "module": "IT Asset Management",
+ "name": "ITAM Maintenance",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

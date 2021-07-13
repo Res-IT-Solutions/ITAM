@@ -1,0 +1,49 @@
+{
+ "actions": [],
+ "autoname": "field:eula_name",
+ "creation": "2021-07-10 08:16:37.683062",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "eula_name",
+  "eula_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "eula_name",
+   "fieldtype": "Data",
+   "label": "EULA Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "eula_details",
+   "fieldtype": "Text Editor",
+   "label": "EULA Details"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-07-10 08:16:37.683062",
+ "modified_by": "Administrator",
+ "module": "IT Asset Management",
+ "name": "EULA",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
